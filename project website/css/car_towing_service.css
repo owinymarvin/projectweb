@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Items wrap to the next line on smaller screens */
+}
+
+.flex-item {
+    flex: 1;
+    /* Equal width for all items */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add media query for desktop screens */
+@media (min-width: 768px) {
+    .flex-item {
+        flex: 0 0 calc(33.33% - 20px);
+        /* Three items per row with some spacing */
+    }
+}
