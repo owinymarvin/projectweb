@@ -3,7 +3,6 @@
 
 <head>
 	<title>Final Users: Car Towing Service</title>
-	<meta http-equiv="refresh" content="25">
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet"
 		type="text/css" />
@@ -22,6 +21,13 @@
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/car_towing_service.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<!-- Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 	<style>
 		.menu-index {
 			color: rgb(255, 255, 255) !important;
@@ -34,79 +40,65 @@
 <body>
 	<div class="menu-container"></div>
 	<div class="content-container">
-		<!-------------------------------------------------------------------------------------------->
-		<!--Start Header-->
+		<div class="cover-image mx-auto w-100">
+			<!-- <img src="img/images/slop.png" alt="cover picture" class="w-100" style="height: 650px;"> -->
 
-		<div class="banner banner-height" style="overflow: hidden;">
-			<div class="d-md-flex">
-				<img src="img/images/towe.png" class="d-md-flex">
-				<div class="flex-row">
-					<div class="flex-item flex-column">
-						<h1 class="add-top-margin-small text-light">Final Users Documentation</h1>
-						<p class="text">
-							The car towing service app was created to enable stranded drivers tow their vehicles to the
-							nearest or a
-							preferred car garage. Users can request for a tow car, view the location of the tow car and
-							pay for tow
-							services all through the app.
-							<br>
-							<a class="text-light mt-1" href="https://natukundaphionah.github.io">More information</a>
-						</p>
-						<a class="text-light mt-3" href="#dev-team">Contact the development team</a>
-						<br><br>
+			<!-- carousel -->
+
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+				style="height: 630px;overflow: hidden;">
+
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="img/images/towe.png" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/images/slop.png" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/images/towe.png" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/images/joper.png" alt="Third slide">
 					</div>
 				</div>
+
+				<!-- end of carousel -->
 			</div>
+			<!-------------------------------------------------------------------------------------------->
+			<!--Start Header-->
 
-		</div>
-	</div>
-	<!--End Header-->
-	<!-------------------------------------------------------------------------------------------->
-
-
-
-	<div class="content bg-light">
-		<div class="content-table flex-column">
-
-			<!-- Order for a car tower Application starts here -->
-			<div class="flex-row mt-5">
-				<div class="flex-item flex-column">
-					<h2 id="order-for-car-tower">Order for a car towing service?</h2>
-					<hr>
-					<p class="text">
-						Don't get stuck anymore. choose between one of our different
-						car towers and we'll take you to the nearest garauge
-					</p>
-					<div class="row">
-
-						<!-- flat bed tower   -->
-						<div class="col-md-4">
-							<img class="image" src="img/images/flatbed2.jpeg">
-							<p class="text text-large text-center">
-								<a target="_blank" href="javascript:void(0)">Flatbed Tower</a><br>
+			<div class="banner banner-height" style="overflow: hidden;">
+				<div class="d-md-flex">
+					<div class="flex-row">
+						<div class="flex-item flex-column">
+							<h1 class="add-top-margin-small text-light">Final Users Documentation</h1>
+							<p class="text">
+								The car towing service app was created to enable stranded drivers tow their vehicles to
+								the
+								nearest or a
+								preferred car garage. Users can request for a tow car, view the location of the tow car
+								and
+								pay for tow
+								services all through the app.
+								<br>
+								<!-- <a class="text-light mt-1" href="https://natukundaphionah.github.io">More information</a> -->
 							</p>
+							<a class="text-light mt-3" href="#dev-team">Contact the development team</a>
+							<br><br>
 						</div>
-
-						<!-- roller  -->
-						<div class="col-md-4">
-							<img class="image" src="img/images/hook3.jpeg">
-							<p class="text text-large text-center">
-								<a target="_blank" href="javascript:void(0)">Hook and Chain Tower</a><br>
-							</p>
-						</div>
-
-						<!-- Hold and wait -->
-						<div class="col-md-4">
-							<img class="image" src="img/images/wheel lift.jpeg">
-							<p class="text text-large text-center">
-								<a target="_blank" href="javascript:void(0)">Wheel Lift Tower</a><br>
-							</p>
-						</div>
-
 					</div>
-
-					<!-- end of car towers  -->
 				</div>
+
+			</div>
+		</div>
+		<!--End Header-->
+		<!-------------------------------------------------------------------------------------------->
+
+
+
+		<div class="content bg-light">
+			<div class="content-table flex-column">
 
 				<!-- Table of contents with ID link.(same document ID) -->
 				<div class="container content mt-5">
@@ -184,206 +176,410 @@
 					</div>
 				</div>
 				<!-- end of Table of contents with ID link.(same document ID) -->
-			</div>
-		</div>
-		<!-- Order for a car tower ends here -->
-
-		<!-- Register or Login starts here -->
-		<div class="flex-row mt-5">
-			<div class="flex-item flex-column w-100">
-				<h2 id="login-register">Register or Login</h2>
-				<hr>
-				<p class="text">
-					Register for an account today for the best tow services. we are more than
-					happy to serve you today
-				</p>
-				<div class="row mt-4" style="overflow: hidden;">
-
-					<!-- Register  -->
-					<div class="col-md-4 text-center">
-						<div class="" style="overflow: hidden; height: 400px;">
-							<img class="image mx-auto" src="img/images/reg.jpeg" style="transform: translateY(-9%);">
-						</div>
-						<p class="text text-large text-center">
-							<a class="text-dark" target="_blank" href="javascript:void(0)">Register</a><br>
-						</p>
-						<p class="text w-50 mx-auto">
-							Simply enter in your personal details and you'll be registered
-							in no time. A working Email and Phone number are required
-						</p>
-					</div>
-
-					<!-- Login  -->
-					<div class="col-md-4 text-center">
-						<div class="" style="overflow: hidden; height: 400px;">
-							<img class="image  mx-auto" src="img/images/login.jpeg"
-								style="transform: translateY(-16%);">
-						</div>
-						<p class="text text-large text-center">
-							<a class="text-dark" target="_blank" href="javascript:void(0)">Login</a><br>
-						</p>
-						<p class="text w-50 mx-auto">
-							Enter your Email and Password to get you logged in.
-							If you have forgotten your password, no worries. Simply reset it
-						</p>
-					</div>
-
-					<!-- reset password  -->
-					<div class="col-md-4 text-center">
-						<div class="" style="overflow: hidden; height: 400px;">
-							<img class="image mx-auto" src="img/images/reset_password.jpeg"
-								style="transform: translateY(-7%);">
-						</div>
-						<p class="text text-large text-center">
-							<a class="text-dark" target="_blank" href="javascript:void(0)">Reset Password</a><br>
-						</p>
-						<p class="text w-50 mx-auto">
-							Don't stress to remember passwords that are not coming
-							back to you. Reset your password and we'll send you a link today
-						</p>
-					</div>
-
-				</div>
-
 
 			</div>
-		</div>
-		<!-- Register or Login ends here -->
+			<!-- Order for a car tower ends here -->
 
 
-		<!-- Android Platform Application starts here -->
-		<div class="flex-row mt-5">
-			<div class="flex-item flex-column">
-				<h2 id="android-platform">Android Platform Application</h2>
-				<hr>
-				<p class="text">
-					For Android users, from your app store, simply search for the application <strong class="font-weight-bold">"car towing services" </strong>
-				</p>
-				
-				<div class="table-content-image w-100" style="overflow: hidden;">
-					<a target="_blank"
-						href="https://play.google.com/store/apps/details?id=com.OlegVegera.TowNGo&hl=en&gl=US">
-						<img src="img/images/google-play-badge.png" alt="login" style="transform: translateY(-1%); height: 60px;">
-					</a>
+			<!-- Register or Login starts here -->
+			<div class="flex-row mt-5">
+				<div class="flex-item flex-column w-100">
+					<h2 id="login-register">Register or Login</h2>
+					<hr>
 					<p class="text">
-						Alternatively, you can use this link to install it directly.
+						Register for an account today for the best tow services. we are more than
+						happy to serve you today
 					</p>
+					<div class="row mt-4" style="overflow: hidden;">
+
+						<!-- Register  -->
+						<div class="col-md-4 text-center">
+							<div class="" style="overflow: hidden; height: 400px;">
+								<img class="image mx-auto" src="img/images/screen3.jpg"
+									style="transform: translateY(-10%);">
+							</div>
+							<p class="text text-large text-center">
+								<a class="text-dark" target="_blank" href="javascript:void(0)">Register</a><br>
+							</p>
+							<p class="text w-50 mx-auto">
+								Simply enter in your personal details and you'll be registered
+								in no time. A working Email and Phone number are required
+							</p>
+						</div>
+
+						<!-- Login  -->
+						<div class="col-md-4 text-center">
+							<div class="" style="overflow: hidden; height: 400px;">
+								<img class="image  mx-auto" src="img/images/screen2.jpg"
+									style="transform: translateY(-14%);">
+							</div>
+							<p class="text text-large text-center">
+								<a class="text-dark" target="_blank" href="javascript:void(0)">Login</a><br>
+							</p>
+							<p class="text w-50 mx-auto">
+								Enter your Email and Password to get you logged in.
+								If you have forgotten your password, no worries. Simply reset it
+							</p>
+						</div>
+
+						<!-- reset password  -->
+						<div class="col-md-4 text-center">
+							<div class="" style="overflow: hidden; height: 400px;">
+								<img class="image mx-auto" src="img/images/screen2.jpg"
+									style="transform: translateY(-30%);">
+							</div>
+							<p class="text text-large text-center">
+								<a class="text-dark" target="_blank" href="javascript:void(0)">Reset Password</a><br>
+							</p>
+							<p class="text w-50 mx-auto">
+								Don't stress to remember passwords that are not coming
+								back to you. Reset your password and we'll send you a link today
+							</p>
+						</div>
+
+					</div>
+
+
 				</div>
 			</div>
-		</div>
-		<!-- Android Platform Application ends here -->
+			<!-- Register or Login ends here -->
 
 
-		<!-- IOS Platform Application starts here -->
-		<div class="flex-row mt-5">
-			<div class="flex-item flex-column">
-				<h2 id="ios-platform">IOS Platform Application</h2>
-				<hr>
-				<p class="text">
-					For IOS users, from your app store, simply search for the application <strong class="font-weight-bold">"car towing services" </strong>
-				</p>
-				
-				<div class="table-content-image w-100" style="overflow: hidden;">
-					<a target="_blank"
-						href="https://play.google.com/store/apps/details?id=com.OlegVegera.TowNGo&hl=en&gl=US">
-						<img src="img/images/app-store-badge.png" alt="login" style="transform: translateY(-1%); height: 60px;">
-					</a>
+				<!-- Order for a car tower Application starts here -->
+				<div class="flex-row mt-5">
+					<div class="flex-item flex-column w-100 mt-5">
+						<h2 id="order-for-car-tower">Order for a car towing service?</h2>
+						<hr>
+						<p class="text">
+							Don't get stuck anymore. choose between one of our different
+							car towers and we'll take you to the nearest garauge
+						</p>
+
+						<div class="row">
+							<!-- flat bed tower   -->
+							<div class="col-md-4">
+								<img class="image" src="img/images/flatbed2.jpeg" style="height: 250px;">
+								<p class="text text-large text-center">
+									<a target="_blank" href="javascript:void(0)">Flatbed Tower</a><br>
+								</p>
+							</div>
+
+							<!-- roller  -->
+							<div class="col-md-4">
+								<img class="image" src="img/images/hook_and_tow.jpg" style="height: 250px;">
+								<p class="text text-large text-center">
+									<a target="_blank" href="javascript:void(0)">Hook and Chain Tower</a><br>
+								</p>
+							</div>
+
+							<!-- Hold and wait -->
+							<div class="col-md-4">
+								<img class="image" src="img/images/wheel_lift_tow.jpg" style="height: 250px;">
+								<p class="text text-large text-center">
+									<a target="_blank" href="javascript:void(0)">Wheel Lift Tower</a><br>
+								</p>
+							</div>
+
+						</div>
+
+						<!-- end of car towers  -->
+					</div>
+
+				</div>
+
+
+			<!-- Android Platform Application starts here -->
+			<div class="flex-row mt-5">
+				<div class="flex-item flex-column w-100">
+					<h2 id="android-platform">Android Platform Application</h2>
+					<hr>
+					<div class="row mx-auto">
+						<div class="col-md-4">
+							<!-- carousel -->
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+								style="height: 900px;overflow: hidden; max-width: 400px;">
+
+								<div class="carousel-inner mx-auto">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen9.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen6.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen7.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen4.jpg" alt="First slide">
+									</div>
+									
+								</div>
+
+								<!-- end of carousel -->
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<!-- carousel -->
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+								style="height: 900px;overflow: hidden; max-width: 400px;">
+
+								<div class="carousel-inner mx-auto">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen6.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen7.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen4.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen9.jpg" alt="First slide">
+									</div>
+									
+								</div>
+
+								<!-- end of carousel -->
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<!-- carousel -->
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+								style="height: 900px;overflow: hidden; max-width: 400px;">
+
+								<div class="carousel-inner mx-auto">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen7.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen4.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen9.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen6.jpg" alt="First slide">
+									</div>
+									
+								</div>
+
+								<!-- end of carousel -->
+							</div>
+						</div>
+
+					</div>
+					<p class="text text-center mt-0">
+						For Android users, from your app store, simply search for the application <strong
+							class="font-weight-bold">"car towing services" </strong>
+					</p>
+
+					<div class="table-content-image w-100 text-center" style="overflow: hidden;">
+						<a target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.OlegVegera.TowNGo&hl=en&gl=US">
+							<img src="img/images/google-play-badge.png" alt="login"
+								style="transform: translateY(-1%); height: 80px;">
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<!-- Android Platform Application ends here -->
+
+
+			<!-- IOS Platform Application starts here -->
+			<div class="flex-row mt-5">
+				<div class="flex-item flex-column">
+					<h2 id="ios-platform">IOS Platform Application</h2>
+					<hr>
+					<div class="row mx-auto">
+						<div class="col-md-4">
+							<!-- carousel -->
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+								style="height: 900px;overflow: hidden; max-width: 400px;">
+
+								<div class="carousel-inner mx-auto">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen9.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen6.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen7.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen4.jpg" alt="First slide">
+									</div>
+									
+								</div>
+
+								<!-- end of carousel -->
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<!-- carousel -->
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+								style="height: 900px;overflow: hidden; max-width: 400px;">
+
+								<div class="carousel-inner mx-auto">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen6.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen7.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen4.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen9.jpg" alt="First slide">
+									</div>
+									
+								</div>
+
+								<!-- end of carousel -->
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<!-- carousel -->
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+								style="height: 900px;overflow: hidden; max-width: 400px;">
+
+								<div class="carousel-inner mx-auto">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen7.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen4.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen9.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/images/screen6.jpg" alt="First slide">
+									</div>
+									
+								</div>
+
+								<!-- end of carousel -->
+							</div>
+						</div>
+
+					</div>
+					<p class="text text-center mt-0">
+						For IOS users, from your app store, simply search for the application <strong
+							class="font-weight-bold">"car towing services" </strong>
+					</p>
+
+					<div class="table-content-image w-100 text-center" style="overflow: hidden;">
+						<a target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.OlegVegera.TowNGo&hl=en&gl=US">
+							<img src="img/images/app-store-badge.png" alt="login"
+								style="transform: translateY(-1%); height: 80px;">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- IOS Platform Application ends here -->
+
+
+			<!-- web development Platform Application starts here -->
+			<div class="flex-row mt-5">
+				<div class="flex-item flex-column">
+					<h2 id="web-dev-platform">Web Platform Application</h2>
+					<hr>
 					<p class="text">
-						Alternatively, you can use this link to install it directly.
+						For web users, the application <strong>"car towing services" </strong> will be hosted in the
+						near
+						future.
+					</p>
+					<p class="text">
+						consider using our <a href="#android-platform">Android Platform</a> or <a
+							href="#ios-platform">IOS
+							Platform</a> applications
 					</p>
 				</div>
 			</div>
-		</div>
-		<!-- IOS Platform Application ends here -->
+			<!-- web development Platform Application ends here -->
 
 
-		<!-- web development Platform Application starts here -->
-		<div class="flex-row mt-5">
-			<div class="flex-item flex-column">
-				<h2 id="web-dev-platform">Web Platform Application</h2>
+			<!-- Linux Platform Application starts here -->
+			<div class="flex-row mt-5">
+				<div class="flex-item flex-column">
+					<h2 id="linux-platform">Linux Platform Application</h2>
+					<hr>
+					<p class="text">
+						For web users, the application <strong>"car towing services" </strong> will be hosted in the
+						near
+						future.
+					</p>
+					<p class="text">
+						consider using our <a href="#android-platform">Android Platform</a> or <a
+							href="#ios-platform">IOS
+							Platform</a> applications
+					</p>
+				</div>
+			</div>
+			<!-- Linux Platform Application ends here -->
+
+
+			<div class="my-5">
+				<h2 id="dev-team">Development Team</h2>
 				<hr>
-				<p class="text">
-					For web users, the application <strong>"car towing services" </strong> will be hosted in the near
-					future.
+				<p class=" center">
+					The team below was responsible for the design and implementation of the project. This was done in
+					partial
+					fulfillment of a bachelor of science degree in computer science.
 				</p>
-				<p class="text">
-					consider using our <a href="#android-platform">Android Platform</a> or <a href="#ios-platform">IOS
-						Platform</a> applications
-				</p>
-			</div>
-		</div>
-		<!-- web development Platform Application ends here -->
 
+				<div class="row">
 
-		<!-- Linux Platform Application starts here -->
-		<div class="flex-row mt-5">
-			<div class="flex-item flex-column">
-				<h2 id="linux-platform">Linux Platform Application</h2>
-				<hr>
-				<p class="text">
-					For web users, the application <strong>"car towing services" </strong> will be hosted in the near
-					future.
-				</p>
-				<p class="text">
-					consider using our <a href="#android-platform">Android Platform</a> or <a href="#ios-platform">IOS
-						Platform</a> applications
-				</p>
-			</div>
-		</div>
-		<!-- Linux Platform Application ends here -->
+					<!-- owiny marvin user profile  -->
+					<div class="col-md-4">
+						<img class="image" src="img/images/marvin.jpg" style="height: 300px;">
+						<p class="text text-large">
+							<a target="_blank" href="javascript:void(0)">Owiny Marvin</a><br>
+							<a target="_blank" href="javascript:void(0)">College of Computing and Information
+								Sciences</a><br>
+							<a target="_blank" href="javascript:void(0)">Makerere University</a><br>
+							<a target="_blank" href="javascript:void(0)">Kampala, Uganda</a>
+						</p>
+					</div>
 
+					<!-- Natukunda phionah user profile  -->
+					<div class="col-md-4">
+						<img class="image" src="img/dummay-img.png" style="height: 300px;">
+						<p class="text text-large">
+							<a target="_blank" href="javascript:void(0)">Natukunda Phionah</a><br>
+							<a target="_blank" href="javascript:void(0)">College of Computing and Information
+								Sciences</a><br>
+							<a target="_blank" href="javascript:void(0)">Makerere University</a><br>
+							<a target="_blank" href="javascript:void(0)">Kampala, Uganda</a>
+						</p>
+					</div>
 
-		<div class="my-5">
-			<h2 id="dev-team">Development Team</h2>
-			<hr>
-			<p class=" center">
-				The team below was responsible for the design and implementation of the project. This was done in
-				partial
-				fulfillment of a bachelor of science degree in computer science.
-			</p>
+					<!-- Magino dan user profile  -->
+					<div class="col-md-4">
+						<img class="image" src="img/dummay-img.png" style="height: 300px;">
+						<p class="text text-large">
+							<a target="_blank" href="javascript:void(0)">Magino Daniel</a><br>
+							<a target="_blank" href="javascript:void(0)">College of Computing and Information
+								Sciences</a><br>
+							<a target="_blank" href="javascript:void(0)">Makerere University</a><br>
+							<a target="_blank" href="javascript:void(0)">Kampala, Uganda</a>
+						</p>
+					</div>
 
-			<div class="row">
-
-				<!-- owiny marvin user profile  -->
-				<div class="col-md-4">
-					<img class="image" src="img/dummay-img.png">
-					<p class="text text-large">
-						<a target="_blank" href="javascript:void(0)">Owiny Marvin</a><br>
-						<a target="_blank" href="javascript:void(0)">College of Computing and Information
-							Sciences</a><br>
-						<a target="_blank" href="javascript:void(0)">Makerere University</a><br>
-						<a target="_blank" href="javascript:void(0)">Kampala, Uganda</a>
-					</p>
 				</div>
 
-				<!-- Natukunda phionah user profile  -->
-				<div class="col-md-4">
-					<img class="image" src="img/dummay-img.png">
-					<p class="text text-large">
-						<a target="_blank" href="javascript:void(0)">Natukunda Phionah</a><br>
-						<a target="_blank" href="javascript:void(0)">College of Computing and Information
-							Sciences</a><br>
-						<a target="_blank" href="javascript:void(0)">Makerere University</a><br>
-						<a target="_blank" href="javascript:void(0)">Kampala, Uganda</a>
-					</p>
-				</div>
-
-				<!-- Magino dan user profile  -->
-				<div class="col-md-4">
-					<img class="image" src="img/dummay-img.png">
-					<p class="text text-large">
-						<a target="_blank" href="javascript:void(0)">Magino Daniel</a><br>
-						<a target="_blank" href="javascript:void(0)">College of Computing and Information
-							Sciences</a><br>
-						<a target="_blank" href="javascript:void(0)">Makerere University</a><br>
-						<a target="_blank" href="javascript:void(0)">Kampala, Uganda</a>
-					</p>
-				</div>
-
+				<!-- end of our user profiles are here.  -->
 			</div>
-
-			<!-- end of our user profiles are here.  -->
-		</div>
 </body>
 
 </html>

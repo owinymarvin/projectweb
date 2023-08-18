@@ -34,3 +34,9 @@ body {
     max-height: 840px;
     overflow: hidden;
 }
+.banner{
+    margin-top: -240px;
+    opacity: 0.86;
+    /* margin-bottom: 25rem; */
+    /* transform: translateY(-200px ); */
+}
